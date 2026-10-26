@@ -1,0 +1,2691 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPYXVBR6HN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DPYXVBR6HN');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- FOUC Prevention & Theme Initialization -->
+    <script>
+      (function() {
+        try {
+          const storedTheme = localStorage.getItem('estudiapro_theme');
+          const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (storedTheme === 'dark' || (!storedTheme && systemPrefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- SEO Meta Tags Avanzados -->
+    <title>EstudiaPro | Tests Online Gratis, Guías de Estudio y Simulacros Oficiales</title>
+    <meta name="description" content="Prepara tus oposiciones, exámenes universitarios, EBAU y DGT con simulacros de test interactivos, temporizador Pomodoro, métodos de estudio científicos y 8 guías académicas con explicaciones detalladas.">
+    <meta name="keywords" content="tests online gratis, simulacros de examen, oposiciones 2026, constitucion espanola test, ley 39 2015 examen, test dgt permiso b, tecnicas de estudio, metodo feynman oposiciones, pomodoro online, palacio de la memoria leyes">
+    <meta name="author" content="EstudiaPro Redacción y Comité Docente">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://estudiapro.es/">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://estudiapro.es/">
+    <meta property="og:site_name" content="EstudiaPro">
+    <meta property="og:title" content="EstudiaPro | Tests Online Gratis, Simulacros y Métodos de Estudio">
+    <meta property="og:description" content="Aprende más rápido con tests corregidos al instante, cálculo de nota de oposición y artículos de técnicas de estudio y memorización.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&h=630&q=85">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Estudiante preparando exámenes con EstudiaPro">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@EstudiaPro">
+    <meta name="twitter:creator" content="@EstudiaPro">
+    <meta name="twitter:title" content="EstudiaPro | Plataforma de Tests y Guías de Estudio">
+    <meta name="twitter:description" content="Baterías de preguntas tipo test, justificaciones jurídicas, método Feynman y temporizador Pomodoro.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&h=630&q=85">
+
+    <!-- Fuentes Web de Alta Velocidad (Inter / Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN Configurado -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#eef6ff',
+                100: '#d9ebff',
+                200: '#bcdeff',
+                300: '#8eccff',
+                400: '#58b0ff',
+                500: '#2f8fff',
+                600: '#176ff5',
+                700: '#1056e1',
+                800: '#1346b6',
+                900: '#163d8f',
+                950: '#112657',
+              },
+              accent: {
+                50: '#ecfdf5',
+                500: '#10b981',
+                600: '#059669',
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(16, 24, 40, 0.06), 0 2px 6px -2px rgba(16, 24, 40, 0.04)',
+              'elevated': '0 12px 32px -4px rgba(16, 24, 40, 0.1), 0 4px 12px -2px rgba(16, 24, 40, 0.06)',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Schema.org Structured Data (JSON-LD Completo para SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://estudiapro.es/#website",
+          "url": "https://estudiapro.es/",
+          "name": "EstudiaPro",
+          "description": "Plataforma de preparación académica, simulacros de test oficiales y técnicas de estudio.",
+          "inLanguage": "es-ES",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://estudiapro.es/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://estudiapro.es/#organization",
+          "name": "EstudiaPro",
+          "url": "https://estudiapro.es/",
+          "logo": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=180&h=180&q=80",
+          "sameAs": [
+            "https://twitter.com/EstudiaPro",
+            "https://facebook.com/EstudiaPro"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://estudiapro.es/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Simulacros de Test",
+              "item": "https://estudiapro.es/#tests-interactivos"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Guías y Artículos",
+              "item": "https://estudiapro.es/#articulos-guias"
+            }
+          ]
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://estudiapro.es/#blog",
+          "name": "Guías de Estudio y Oposiciones EstudiaPro",
+          "description": "Artículos científicos sobre técnicas de estudio, repaso espaciado y leyes.",
+          "blogPost": [
+            {
+              "@type": "BlogPosting",
+              "headline": "Cómo memorizar artículos y leyes sin olvidarlos: El Método del Palacio de la Memoria",
+              "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-20",
+              "author": { "@type": "Person", "name": "Carlos Benítez" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "El Método Feynman: Cómo aprender cualquier concepto complejo explicándolo como a un niño",
+              "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-21",
+              "author": { "@type": "Person", "name": "Dra. Elena Marín" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Las 10 preguntas trampa del examen teórico de la DGT y cómo no caer en ellas",
+              "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-22",
+              "author": { "@type": "Person", "name": "Manuel Sanz" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Pomodoro vs Time Blocking: ¿Cuál es el sistema definitivo para opositores?",
+              "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-23",
+              "author": { "@type": "Person", "name": "Sofía Gallego" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "EBAU y Selectividad: Calendario estratégico de repaso a 3 meses del examen",
+              "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-24",
+              "author": { "@type": "Person", "name": "Javier Navarro" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Guía práctica de la Ley 39/2015: Cómputo de plazos y silencio administrativo sin líos",
+              "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-25",
+              "author": { "@type": "Person", "name": "Laura Gómez" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Nutrición para el cerebro: Alimentos y suplementos avalados por la ciencia en época de exámenes",
+              "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-26",
+              "author": { "@type": "Person", "name": "Dr. Marcos Vidal" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Ansiedad ante los exámenes: Técnicas de respiración y control del estrés comprobadas",
+              "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+              "datePublished": "2026-10-26",
+              "author": { "@type": "Person", "name": "Alicia Serrano" }
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Los tests de EstudiaPro son completamente gratuitos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, el 100% de los simulacros, preguntas justificadas y herramientas como el temporizador Pomodoro son de acceso libre y sin tarjeta de crédito."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo se calculan las notas en los simulacros de examen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Utilizamos la fórmula oficial de oposiciones públicas: Nota = Aciertos - (Fallos / 3) normalizada a escala sobre 10."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Prevención de Cumulative Layout Shift (CLS) en Espacios AdSense */
+      .adsense-leaderboard-slot {
+        min-height: 90px;
+        background-color: rgba(243, 244, 246, 0.6);
+      }
+      .dark .adsense-leaderboard-slot {
+        background-color: rgba(30, 41, 59, 0.4);
+      }
+      
+      .adsense-sidebar-slot {
+        min-height: 250px;
+        background-color: rgba(243, 244, 246, 0.6);
+      }
+      .dark .adsense-sidebar-slot {
+        background-color: rgba(30, 41, 59, 0.4);
+      }
+
+      /* Scrollbar fluida */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 9999px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+      }
+    </style>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+
+    <!-- Enlace de Accesibilidad para Teclado -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-brand-600 text-white rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-brand-500">
+        Saltar al contenido principal
+    </a>
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER / NAVEGACIÓN SUPERIOR            -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 dark:bg-slate-900/90 border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
+                
+                <!-- Logo & Brand Identity -->
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-xl p-1" aria-label="EstudiaPro Inicio">
+                        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 flex items-center justify-center text-white shadow-md shadow-brand-500/25 group-hover:scale-105 transition-transform duration-200">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xl sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-slate-900 via-brand-700 to-brand-600 dark:from-white dark:via-brand-300 dark:to-brand-400 bg-clip-text text-transparent">
+                                Estudia<span class="text-brand-600 dark:text-brand-400">Pro</span>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400 hidden sm:inline-block -mt-1">
+                                Preparación Inteligente
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2" aria-label="Navegación principal">
+                    <a href="#tests-interactivos" class="px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100/70 dark:hover:bg-slate-800/70 rounded-lg transition-colors">
+                        Simulacro Activo
+                    </a>
+                    <a href="#catalogo-tests" class="px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100/70 dark:hover:bg-slate-800/70 rounded-lg transition-colors">
+                        Tests por Temas
+                    </a>
+                    <a href="#articulos-guias" class="px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100/70 dark:hover:bg-slate-800/70 rounded-lg transition-colors flex items-center gap-1.5">
+                        <span>Guías y Artículos</span>
+                        <span class="px-1.5 py-0.5 text-[10px] bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300 font-bold rounded">8</span>
+                    </a>
+                    <a href="#tecnicas-estudio" class="px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100/70 dark:hover:bg-slate-800/70 rounded-lg transition-colors">
+                        Métodos de Estudio
+                    </a>
+                    <!-- Botón disparador del Pomodoro Modal -->
+                    <button type="button" id="open-pomodoro-modal-btn" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200/80 dark:border-emerald-800/80 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Pomodoro</span>
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+                    </button>
+                    <a href="#contacto-faq" class="px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100/70 dark:hover:bg-slate-800/70 rounded-lg transition-colors">
+                        FAQ
+                    </a>
+                </nav>
+
+                <!-- Buscador, Switch de Modo Oscuro y Móvil -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    
+                    <!-- Quick Search Trigger Input (Desktop) -->
+                    <div class="relative hidden md:block w-48 xl:w-64">
+                        <label for="header-quick-search" class="sr-only">Buscar preguntas o artículos</label>
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <input type="text" id="header-quick-search" placeholder="Buscar test o guía... (/)" 
+                               class="w-full pl-9 pr-8 py-2 text-xs sm:text-sm bg-slate-100 dark:bg-slate-800/90 text-slate-900 dark:text-slate-100 placeholder-slate-400 rounded-lg border border-transparent focus:border-brand-500 focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 transition-all">
+                        <kbd class="absolute right-2.5 top-2.5 hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono text-slate-400 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded">
+                            /
+                        </kbd>
+                    </div>
+
+                    <!-- Botón Modo Oscuro / Claro -->
+                    <button type="button" id="theme-toggle-btn" aria-label="Cambiar modo de luz" 
+                            class="p-2 sm:p-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                        <svg id="theme-sun-icon" class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg id="theme-moon-icon" class="w-5 h-5 block dark:hidden text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+
+                    <!-- Botón Menú Móvil -->
+                    <button type="button" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú de navegación" 
+                            class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobile-nav" class="hidden lg:hidden border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-4 pt-2 pb-6 space-y-3">
+            <div class="pt-2 pb-1">
+                <input type="text" id="mobile-quick-search" placeholder="Buscar preguntas, leyes o guías..." 
+                       class="w-full pl-3 pr-3 py-2.5 text-sm bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 rounded-lg border border-slate-200 dark:border-slate-700 focus:border-brand-500 focus:outline-none">
+            </div>
+            <nav class="flex flex-col space-y-1.5" aria-label="Navegación móvil">
+                <a href="#tests-interactivos" class="px-3 py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">
+                    🎯 Simulacro Interactivo
+                </a>
+                <a href="#catalogo-tests" class="px-3 py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">
+                    📚 Tests por Temas
+                </a>
+                <a href="#articulos-guias" class="px-3 py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">
+                    📖 8 Guías de Estudio
+                </a>
+                <a href="#tecnicas-estudio" class="px-3 py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">
+                    🧠 Métodos de Estudio
+                </a>
+                <button type="button" id="mobile-open-pomodoro-btn" class="w-full text-left px-3 py-2 text-base font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 rounded-lg">
+                    ⏱️ Temporizador Pomodoro
+                </button>
+                <a href="#contacto-faq" class="px-3 py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">
+                    ❓ Preguntas Frecuentes
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- PUBLICIDAD: HEADER LEADERBOARD AD SLOT     -->
+    <!-- ========================================== -->
+    <div class="w-full bg-slate-100/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800/60 py-2">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="adsense-leaderboard-slot rounded-lg border border-dashed border-slate-300 dark:border-slate-700 flex flex-col items-center justify-center p-2 text-center transition-all overflow-hidden" 
+                 role="complementary" aria-label="Espacio de Publicidad Superior">
+                <span class="text-[10px] tracking-widest uppercase font-semibold text-slate-400 dark:text-slate-500 mb-0.5">
+                    — PUBLICIDAD —
+                </span>
+                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    Espacio disponible para Banner Responsivo (Google AdSense 728x90 / 320x50 móvil)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="main-content" class="flex-grow">
+        
+        <!-- ========================================== -->
+        <!-- 2. HERO SECTION CON BUSCADOR CENTRAL       -->
+        <!-- ========================================== -->
+        <section class="relative overflow-hidden pt-12 pb-16 lg:pt-20 lg:pb-24 bg-gradient-to-b from-brand-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 border-b border-slate-200/60 dark:border-slate-800/60">
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-400/15 dark:bg-brand-600/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute top-1/2 -right-24 w-96 h-96 bg-emerald-400/10 dark:bg-emerald-600/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                
+                <!-- Pill Badge -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/80 dark:bg-brand-950/80 border border-brand-200 dark:border-brand-800/80 text-brand-700 dark:text-brand-300 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+                    <span class="flex h-2 w-2 rounded-full bg-brand-500 animate-ping"></span>
+                    <span>Convocatorias 2026/2027 actualizadas • Más de 25.000 preguntas verificadas</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+                    Consigue tu plaza y aprueba tus exámenes con <span class="bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 bg-clip-text text-transparent">simulacros inteligentes</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="mt-5 text-base sm:text-lg lg:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
+                    Practica gratis con tests tipo examen, explicaciones jurídicas inmediatas, cronómetro oficial y 8 guías completas basadas en ciencia del aprendizaje.
+                </p>
+
+                <!-- Central Test Search Box -->
+                <div class="mt-8 max-w-2xl mx-auto">
+                    <form id="hero-search-form" class="relative flex items-center shadow-elevated rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 p-1.5 sm:p-2 transition-all focus-within:ring-4 focus-within:ring-brand-500/20 focus-within:border-brand-500" role="search">
+                        <div class="pl-3 sm:pl-4 text-slate-400">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="hero-search-input" 
+                               placeholder="¿Qué estás preparando? Ej: Constitución, Ley 39, DGT, EBAU..." 
+                               class="w-full px-3 py-2.5 sm:py-3 text-sm sm:text-base text-slate-900 dark:text-slate-100 bg-transparent placeholder-slate-400 focus:outline-none"
+                               autocomplete="off">
+                        <button type="submit" class="px-5 py-2.5 sm:py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base transition-colors shadow-md shadow-brand-500/25 flex-shrink-0 flex items-center gap-1.5">
+                            <span>Buscar</span>
+                            <svg class="w-4 h-4 hidden sm:inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    <!-- Popular Search Pills -->
+                    <div class="mt-3.5 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-xs text-slate-500 dark:text-slate-400">
+                        <span class="font-medium">Directos:</span>
+                        <button type="button" class="quick-filter-tag px-2.5 py-1 bg-slate-100 dark:bg-slate-800/80 hover:bg-brand-50 hover:text-brand-600 dark:hover:bg-slate-700 rounded-full transition-colors" data-tag="constitucion">
+                            Constitución Española
+                        </button>
+                        <button type="button" class="quick-filter-tag px-2.5 py-1 bg-slate-100 dark:bg-slate-800/80 hover:bg-brand-50 hover:text-brand-600 dark:hover:bg-slate-700 rounded-full transition-colors" data-tag="ley39">
+                            Ley 39/2015 LPAC
+                        </button>
+                        <button type="button" class="quick-filter-tag px-2.5 py-1 bg-slate-100 dark:bg-slate-800/80 hover:bg-brand-50 hover:text-brand-600 dark:hover:bg-slate-700 rounded-full transition-colors" data-tag="dgt">
+                            DGT Permiso B
+                        </button>
+                        <button type="button" class="quick-filter-tag px-2.5 py-1 bg-slate-100 dark:bg-slate-800/80 hover:bg-brand-50 hover:text-brand-600 dark:hover:bg-slate-700 rounded-full transition-colors" data-tag="ebau">
+                            Selectividad EBAU
+                        </button>
+                        <button type="button" class="quick-filter-tag px-2.5 py-1 bg-slate-100 dark:bg-slate-800/80 hover:bg-brand-50 hover:text-brand-600 dark:hover:bg-slate-700 rounded-full transition-colors" data-tag="ortografia">
+                            Ortografía RAE
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Primary CTAs -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                    <a href="#tests-interactivos" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg shadow-brand-500/30 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all text-center flex items-center justify-center gap-2">
+                        <span>Empezar simulacro gratuito</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </a>
+                    <a href="#articulos-guias" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 font-bold text-base border border-slate-200 dark:border-slate-800 shadow-sm transition-all text-center flex items-center justify-center gap-2">
+                        <span>Ver las 8 guías de estudio</span>
+                        <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Proof Counters / Social Proof Badges -->
+                <div class="mt-12 pt-8 border-t border-slate-200/80 dark:border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-2">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-brand-600 dark:text-brand-400">25.000+</div>
+                        <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">Preguntas de examen</div>
+                    </div>
+                    <div class="p-2">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">94.8%</div>
+                        <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">Tasa de aprobados</div>
+                    </div>
+                    <div class="p-2">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">100% Gratis</div>
+                        <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">Sin registro obligatorio</div>
+                    </div>
+                    <div class="p-2">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">BOE 2026</div>
+                        <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-0.5">Normativa al día</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- MAIN CONTENT WITH SIDEBAR GRID (TWO-COLUMN DESKTOP LAYOUT)     -->
+        <!-- ============================================================== -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- LEFT / MAIN COLUMN (8 COLS ON DESKTOP) -->
+                <div class="lg:col-span-8 space-y-12">
+                    
+                    <!-- ========================================== -->
+                    <!-- 3. MÓDULO DE TEST INTERACTIVO FUNCIONAL    -->
+                    <!-- ========================================== -->
+                    <section id="tests-interactivos" class="scroll-mt-24">
+                        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-elevated overflow-hidden transition-all">
+                            
+                            <!-- Test Header Bar -->
+                            <div class="p-5 sm:p-6 bg-slate-50/80 dark:bg-slate-800/50 border-b border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <span id="quiz-category-badge" class="px-2.5 py-1 text-xs font-bold uppercase tracking-wider rounded-md bg-brand-100 text-brand-800 dark:bg-brand-950 dark:text-brand-300">
+                                            Constitución Española
+                                        </span>
+                                        <span id="quiz-difficulty-badge" class="px-2 py-0.5 text-xs font-semibold rounded bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300">
+                                            Nivel Oposición
+                                        </span>
+                                    </div>
+                                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mt-1.5 flex items-center gap-2">
+                                        <span id="quiz-subject-title">Simulador de Examen Oficial</span>
+                                    </h2>
+                                </div>
+
+                                <!-- Timer & Sound Controls -->
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 font-mono text-sm text-slate-700 dark:text-slate-200 shadow-sm">
+                                        <svg class="w-4 h-4 text-brand-600 dark:text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <span id="quiz-timer-display" aria-label="Tiempo transcurrido">00:00</span>
+                                    </div>
+                                    <button type="button" id="quiz-sound-toggle" aria-label="Silenciar sonido del test" title="Activar/Silenciar efectos sonoros" 
+                                            class="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-brand-600 transition-colors">
+                                        <svg id="quiz-sound-on-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                        </svg>
+                                        <svg id="quiz-sound-off-icon" class="w-4 h-4 hidden text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Progress Bar & Score Metrics -->
+                            <div class="px-5 sm:px-6 pt-4 pb-2 bg-slate-50/40 dark:bg-slate-900/40 border-b border-slate-100 dark:border-slate-800">
+                                <div class="flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 mb-1.5">
+                                    <span id="quiz-counter-text">Pregunta 1 de 6</span>
+                                    <span id="quiz-progress-percent">17% Completado</span>
+                                </div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                                    <div id="quiz-progress-bar" class="bg-gradient-to-r from-brand-600 to-indigo-600 h-full w-[17%] transition-all duration-300 ease-out" role="progressbar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                                <!-- Real-time Score Board -->
+                                <div class="mt-3 grid grid-cols-3 gap-2 py-2 text-center text-xs sm:text-sm border-t border-slate-200/50 dark:border-slate-800/50">
+                                    <div class="flex items-center justify-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold">
+                                        <span>✓ Aciertos:</span>
+                                        <span id="quiz-score-correct" class="font-mono text-base">0</span>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-1.5 text-rose-600 dark:text-rose-400 font-bold">
+                                        <span>✗ Fallos:</span>
+                                        <span id="quiz-score-incorrect" class="font-mono text-base">0</span>
+                                    </div>
+                                    <div class="flex items-center justify-center gap-1.5 text-brand-600 dark:text-brand-400 font-bold">
+                                        <span>Nota Neta:</span>
+                                        <span id="quiz-score-net" class="font-mono text-base">0.00 / 10</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Question Card Body -->
+                            <div class="p-5 sm:p-7">
+                                
+                                <!-- Question Prompt -->
+                                <div class="mb-6">
+                                    <span id="quiz-id-tag" class="inline-block text-xs font-mono font-semibold text-brand-600 dark:text-brand-400 mb-1">
+                                        ID: #TEST-CE-101
+                                    </span>
+                                    <h3 id="quiz-question-text" class="text-base sm:text-xl font-bold text-slate-900 dark:text-slate-100 leading-snug">
+                                        Cargando pregunta...
+                                    </h3>
+                                </div>
+
+                                <!-- Options Container -->
+                                <div id="quiz-options-container" class="space-y-3" role="radiogroup" aria-labelledby="quiz-question-text">
+                                    <!-- Inyectado vía JavaScript -->
+                                </div>
+
+                                <!-- Explanation Box (Appears after answer) -->
+                                <div id="quiz-explanation-box" class="hidden mt-6 p-4 sm:p-5 rounded-xl border transition-all" role="region" aria-live="polite">
+                                    <div class="flex items-start gap-3">
+                                        <div id="quiz-explanation-icon" class="mt-0.5 flex-shrink-0"></div>
+                                        <div class="flex-grow">
+                                            <h4 id="quiz-explanation-title" class="text-sm font-bold tracking-tight">
+                                                Explicación Oficial y Justificación
+                                            </h4>
+                                            <p id="quiz-explanation-text" class="text-xs sm:text-sm mt-1 leading-relaxed text-slate-700 dark:text-slate-300"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Navigation & Action Controls -->
+                                <div class="mt-8 pt-5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3">
+                                    <button type="button" id="quiz-reset-btn" class="px-4 py-2 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1.5">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                        </svg>
+                                        <span>Reiniciar simulacro</span>
+                                    </button>
+
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" id="quiz-prev-btn" disabled class="px-4 py-2 text-xs sm:text-sm font-semibold text-slate-400 dark:text-slate-600 bg-slate-100 dark:bg-slate-800 rounded-lg cursor-not-allowed transition-colors">
+                                            Anterior
+                                        </button>
+                                        <button type="button" id="quiz-next-btn" class="px-5 py-2 text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-lg shadow-sm shadow-brand-500/20 transition-all flex items-center gap-1.5">
+                                            <span>Siguiente</span>
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ========================================== -->
+                    <!-- PUBLICIDAD: IN-FEED BANNER AD              -->
+                    <!-- ========================================== -->
+                    <div class="adsense-leaderboard-slot rounded-xl border border-dashed border-slate-300 dark:border-slate-700 flex flex-col items-center justify-center p-3 text-center my-6" 
+                         role="complementary" aria-label="Espacio de Publicidad Intermedia">
+                        <span class="text-[10px] tracking-widest uppercase font-semibold text-slate-400 dark:text-slate-500 mb-1">
+                            — ANUNCIO PATROCINADO —
+                        </span>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">
+                            Espacio para anuncio In-Article o Display adaptable (Google AdSense Responsive)
+                        </div>
+                    </div>
+
+                    <!-- ======================================================= -->
+                    <!-- 4. CUADRÍCULA DE RECURSOS Y TESTS (GRID DE CONTENIDO)  -->
+                    <!-- ======================================================= -->
+                    <section id="catalogo-tests" class="scroll-mt-24">
+                        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+                            <div>
+                                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                                    Baterías de Tests y Temarios
+                                </h2>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
+                                    Haz clic en cualquier temario para cargarlo instantáneamente en el simulador superior.
+                                </p>
+                            </div>
+                            
+                            <!-- Category Filter Tabs -->
+                            <div class="flex items-center gap-1 p-1 bg-slate-200/60 dark:bg-slate-800 rounded-xl overflow-x-auto text-xs font-semibold">
+                                <button type="button" class="category-pill-btn active px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 shadow-sm" data-category="all">
+                                    Todos
+                                </button>
+                                <button type="button" class="category-pill-btn px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-category="oposiciones">
+                                    Oposiciones
+                                </button>
+                                <button type="button" class="category-pill-btn px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-category="ebau">
+                                    Selectividad EBAU
+                                </button>
+                                <button type="button" class="category-pill-btn px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-category="dgt">
+                                    DGT Conducir
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card Grid Container -->
+                        <div id="test-cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            
+                            <!-- Card 1: Constitución Española -->
+                            <article class="test-item-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all group flex flex-col justify-between" data-category="oposiciones" data-keywords="constitucion española derechos deberes corona gobierno cortes generales">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="px-2.5 py-1 text-[11px] font-bold uppercase rounded-md bg-indigo-50 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300">
+                                            Oposiciones Generales
+                                        </span>
+                                        <span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-200/50 dark:border-emerald-800">
+                                            Actualizado 2026
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                                        Constitución Española de 1978 (Completa)
+                                    </h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-2">
+                                        169 artículos: Título Preliminar, Derechos Fundamentales, Corona, Cortes Generales y Poder Judicial.
+                                    </p>
+                                </div>
+                                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📝 1.840 preguntas</span>
+                                        <span>⚡ Media: 7.2/10</span>
+                                    </div>
+                                    <button type="button" onclick="loadTestPreset('constitucion')" class="px-3.5 py-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-white hover:bg-brand-600 dark:hover:bg-brand-600 rounded-lg border border-brand-200 dark:border-brand-800 transition-all">
+                                        Hacer Test →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Card 2: Ley 39/2015 LPAC -->
+                            <article class="test-item-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all group flex flex-col justify-between" data-category="oposiciones" data-keywords="ley 39 2015 lpac procedimiento administrativo comun notificaciones plazos recursos">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="px-2.5 py-1 text-[11px] font-bold uppercase rounded-md bg-indigo-50 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300">
+                                            Oposiciones Administrativo
+                                        </span>
+                                        <span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300 border border-amber-200/50 dark:border-amber-800">
+                                            Dificultad Alta
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                                        Ley 39/2015 - Procedimiento Administrativo
+                                    </h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-2">
+                                        Cómputo de plazos, validez de actos, notificaciones electrónicas y silencio administrativo positivo y negativo.
+                                    </p>
+                                </div>
+                                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📝 1.120 preguntas</span>
+                                        <span>⚡ Media: 6.4/10</span>
+                                    </div>
+                                    <button type="button" onclick="loadTestPreset('ley39')" class="px-3.5 py-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-white hover:bg-brand-600 dark:hover:bg-brand-600 rounded-lg border border-brand-200 dark:border-brand-800 transition-all">
+                                        Hacer Test →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Card 3: DGT Teórico B -->
+                            <article class="test-item-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all group flex flex-col justify-between" data-category="dgt" data-keywords="dgt permiso b conducir coche autoescuela señales trafico prioridades velocidad">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="px-2.5 py-1 text-[11px] font-bold uppercase rounded-md bg-emerald-50 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300">
+                                            DGT Autoescuela
+                                        </span>
+                                        <span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 border border-blue-200/50 dark:border-blue-800">
+                                            Simulacro Oficial
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                                        Permiso B de Conducir - Simulacro DGT
+                                    </h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-2">
+                                        Preguntas oficiales de Tráfico: señales verticales, adelantamientos, tasas de alcoholemia y primeros auxilios.
+                                    </p>
+                                </div>
+                                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📝 3.450 preguntas</span>
+                                        <span>⚡ Máx. 3 fallos</span>
+                                    </div>
+                                    <button type="button" onclick="loadTestPreset('dgt')" class="px-3.5 py-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-white hover:bg-brand-600 dark:hover:bg-brand-600 rounded-lg border border-brand-200 dark:border-brand-800 transition-all">
+                                        Hacer Test →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Card 4: Selectividad EBAU Biología -->
+                            <article class="test-item-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all group flex flex-col justify-between" data-category="ebau" data-keywords="selectividad ebau evau biologia celula adn genetica inmunologia bachillerato">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="px-2.5 py-1 text-[11px] font-bold uppercase rounded-md bg-purple-50 text-purple-700 dark:bg-purple-950/70 dark:text-purple-300">
+                                            Selectividad / EBAU
+                                        </span>
+                                        <span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300 border border-purple-200/50 dark:border-purple-800">
+                                            2º Bachillerato
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                                        Biología EBAU - Celular, Genética e Inmunología
+                                    </h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-2">
+                                        Banco de preguntas de convocatorias universitarias: ciclo celular, mitosis, síntesis de proteínas e inmunología.
+                                    </p>
+                                </div>
+                                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📝 980 preguntas</span>
+                                        <span>⚡ Media: 8.1/10</span>
+                                    </div>
+                                    <button type="button" onclick="loadTestPreset('ebau_bio')" class="px-3.5 py-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-white hover:bg-brand-600 dark:hover:bg-brand-600 rounded-lg border border-brand-200 dark:border-brand-800 transition-all">
+                                        Hacer Test →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Card 5: Ortografía y Gramática RAE (Oposiciones) -->
+                            <article class="test-item-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all group flex flex-col justify-between" data-category="oposiciones" data-keywords="ortografia lengua gramatica rae policia nacional guardia civil acentuacion palabras dudosas">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="px-2.5 py-1 text-[11px] font-bold uppercase rounded-md bg-amber-50 text-amber-700 dark:bg-amber-950/70 dark:text-amber-300">
+                                            Policía & Guardia Civil
+                                        </span>
+                                        <span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300 border border-amber-200/50 dark:border-amber-800">
+                                            Eliminatorio
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                                        Ortografía y Gramática Oficial RAE
+                                    </h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-2">
+                                        Palabras trampa, tildes diacríticas, extranjerismos adaptados y términos de doble grafía según el Diccionario RAE.
+                                    </p>
+                                </div>
+                                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📝 2.200 preguntas</span>
+                                        <span>⚡ Cero fallos tolerados</span>
+                                    </div>
+                                    <button type="button" onclick="loadTestPreset('ortografia')" class="px-3.5 py-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-white hover:bg-brand-600 dark:hover:bg-brand-600 rounded-lg border border-brand-200 dark:border-brand-800 transition-all">
+                                        Hacer Test →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Card 6: Inglés B2 / C1 Oficial -->
+                            <article class="test-item-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all group flex flex-col justify-between" data-category="ebau" data-keywords="ingles b2 c1 cambridge first advanced idioms phrasal verbs ebau oposiciones">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="px-2.5 py-1 text-[11px] font-bold uppercase rounded-md bg-sky-50 text-sky-700 dark:bg-sky-950/70 dark:text-sky-300">
+                                            Idiomas / Cambridge
+                                        </span>
+                                        <span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300 border border-sky-200/50 dark:border-sky-800">
+                                            B2 First & C1
+                                        </span>
+                                    </div>
+                                    <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                                        Inglés Oficial B2/C1 - Use of English
+                                    </h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-2">
+                                        Phrasal verbs, preposiciones dependientes, transformaciones oracionales y vocabulario de nivel avanzado para oposiciones y universidad.
+                                    </p>
+                                </div>
+                                <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📝 1.600 preguntas</span>
+                                        <span>⚡ Media: 7.8/10</span>
+                                    </div>
+                                    <button type="button" onclick="loadTestPreset('ingles')" class="px-3.5 py-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-white hover:bg-brand-600 dark:hover:bg-brand-600 rounded-lg border border-brand-200 dark:border-brand-800 transition-all">
+                                        Hacer Test →
+                                    </button>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                    <!-- ============================================================== -->
+                    <!-- 8 ARTÍCULOS ACADÉMICOS CON FOTOGRAFÍAS REALES Y CONTENIDO RICO -->
+                    <!-- ============================================================== -->
+                    <section id="articulos-guias" class="scroll-mt-24">
+                        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">
+                                    Biblioteca de Conocimiento
+                                </span>
+                                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight mt-1">
+                                    8 Guías de Estudio Esenciales
+                                </h2>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
+                                    Artículos basados en neurociencia y jurisprudencia para maximizar tu rendimiento en simulacros y convocatorias reales.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 8 Article Cards Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" id="articles-container">
+                            
+                            <!-- Artículo 1: Memorizar Leyes / Palacio de la Memoria -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Libros de leyes y apuntes jurídicos en biblioteca" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-slate-900/80 text-white backdrop-blur-md">
+                                            Oposiciones & Leyes
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 6 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            Cómo memorizar artículos y leyes sin olvidarlos: El Método del Palacio de la Memoria
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Aprende a anclar los 169 artículos de la Constitución y disposiciones complejas a estancias de tu casa para recordarlos con precisión milimétrica en el examen.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-brand-600 text-white text-[10px] font-bold flex items-center justify-center">CB</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Carlos Benítez</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(0)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 2: Método Feynman -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Estudiante redactando notas y esquemas en mesa de estudio" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-brand-900/80 text-white backdrop-blur-md">
+                                            Técnicas de Estudio
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 5 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            El Método Feynman: Cómo aprender cualquier concepto explicándolo como a un niño
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Los 4 pasos ideados por el Nobel Richard Feynman para detectar lagunas de conocimiento ocultas y retener temarios densos sin memorización hueca.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-emerald-600 text-white text-[10px] font-bold flex items-center justify-center">EM</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Dra. Elena Marín</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(1)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 3: DGT 10 Preguntas Trampa -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Conducción en carretera coche volante tráfico" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-emerald-900/80 text-white backdrop-blur-md">
+                                            Carnet DGT
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 7 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            Las 10 preguntas trampa del examen teórico de la DGT y cómo superarlas
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Desglosamos las preguntas oficiales de Tráfico donde cae el 70% de alumnos: velocidades en travesías, prioridad en glorietas y tasa 0,0 para noveles.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center">MS</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Manuel Sanz</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(2)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 4: Pomodoro vs Time Blocking -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Planificador horario reloj de mesa y lista de tareas" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-amber-900/80 text-white backdrop-blur-md">
+                                            Productividad
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 6 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            Pomodoro vs Time Blocking: ¿Cuál es el mejor método para opositores?
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Comparativa práctica entre bloques de 25 minutos y agendas blindadas de 3 horas. Cuándo usar cada sistema según si estás en primera vuelta o en repaso final.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-amber-600 text-white text-[10px] font-bold flex items-center justify-center">SG</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Sofía Gallego</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(3)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 5: EBAU Calendario 3 Meses -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Estudiantes universitarios trabajando en equipo en campus" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-purple-900/80 text-white backdrop-blur-md">
+                                            Selectividad / EBAU
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 8 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            EBAU / Selectividad: Calendario estratégico de repaso a 3 meses del examen
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Cómo planificar las semanas clave para asegurar tu nota de corte: ponderaciones de materias, simulacros con cronómetro y resolución de exámenes reales.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-purple-600 text-white text-[10px] font-bold flex items-center justify-center">JN</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Javier Navarro</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(4)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 6: Ley 39/2015 Desglosada -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Documentos oficiales pluma estilográfica firma jurídica" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-indigo-900/80 text-white backdrop-blur-md">
+                                            Derecho Administrativo
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 9 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            Guía práctica de la Ley 39/2015: Cómputo de plazos y silencio administrativo
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Reglas mnemotécnicas para no fallar en el cómputo de días hábiles vs naturales, los 10 días de la notificación electrónica y los supuestos de nulidad de pleno derecho.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-indigo-600 text-white text-[10px] font-bold flex items-center justify-center">LG</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Laura Gómez</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(5)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 7: Nutrición para el Cerebro -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Alimentos saludables frutos rojos nueces nutrición cerebral" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-emerald-900/80 text-white backdrop-blur-md">
+                                            Salud & Rendimiento
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 6 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            Nutrición para el cerebro: Alimentos y suplementos avalados por la ciencia
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Qué desayunar el día del examen, cómo regular la cafeína para evitar picos de ansiedad y qué nutrientes (Omega-3 DHA, magnesio y colina) mejoran la sinapsis neuronal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-emerald-700 text-white text-[10px] font-bold flex items-center justify-center">MV</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Dr. Marcos Vidal</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(6)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Artículo 8: Ansiedad ante los Exámenes -->
+                            <article class="article-card bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-soft hover:shadow-elevated hover:border-brand-300 dark:hover:border-brand-700 transition-all flex flex-col justify-between group">
+                                <div>
+                                    <div class="relative overflow-hidden aspect-[16/10] bg-slate-100 dark:bg-slate-800">
+                                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" 
+                                             alt="Persona meditando en calma luz suave control emocional" 
+                                             loading="lazy" decoding="async" width="800" height="500"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold rounded-lg bg-rose-900/80 text-white backdrop-blur-md">
+                                            Psicología del Opositor
+                                        </span>
+                                        <span class="absolute bottom-3 right-3 px-2 py-0.5 text-[10px] font-medium rounded bg-black/60 text-slate-200 backdrop-blur-sm">
+                                            ⏱ 7 min lectura
+                                        </span>
+                                    </div>
+                                    <div class="p-5">
+                                        <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                                            Ansiedad ante los exámenes: Técnicas de respiración y control del estrés
+                                        </h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+                                            Aprende el protocolo de respiración 4-7-8 y la desensibilización sistemática para evitar el temido "quedarse en blanco" ante la hoja del tribunal examinador.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-rose-600 text-white text-[10px] font-bold flex items-center justify-center">AS</div>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Alicia Serrano</span>
+                                    </div>
+                                    <button type="button" onclick="openArticleModal(7)" class="text-xs font-bold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center gap-1">
+                                        <span>Leer guía</span> →
+                                    </button>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                    <!-- ========================================== -->
+                    <!-- TÉCNICAS DE ESTUDIO CIENTÍFICAS            -->
+                    <!-- ========================================== -->
+                    <section id="tecnicas-estudio" class="scroll-mt-24 bg-gradient-to-br from-slate-900 to-slate-950 text-white rounded-2xl p-6 sm:p-8 relative overflow-hidden shadow-elevated">
+                        <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-brand-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="max-w-2xl">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-400">
+                                Ciencia del Aprendizaje
+                            </span>
+                            <h2 class="text-xl sm:text-2xl font-extrabold mt-1">
+                                Las 3 técnicas avaladas para duplicar tu retención
+                            </h2>
+                            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+                                No estudies más horas; estudia mejor. Nuestros simulacros implementan los principios cognitivos más potentes del aprendizaje activo:
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                                <div class="text-brand-400 font-mono font-bold text-lg">01. Active Recall</div>
+                                <h3 class="font-bold text-sm text-white mt-1">Evocación Activa</h3>
+                                <p class="text-xs text-slate-400 mt-1">Forzar a tu cerebro a recuperar la respuesta antes de mirarla multiplica por 3 la memoria a largo plazo.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                                <div class="text-brand-400 font-mono font-bold text-lg">02. Spaced Repetition</div>
+                                <h3 class="font-bold text-sm text-white mt-1">Repetición Espaciada</h3>
+                                <p class="text-xs text-slate-400 mt-1">Repasar tus preguntas falladas en intervalos de 1, 3 y 7 días destruye la curva del olvido de Ebbinghaus.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                                <div class="text-brand-400 font-mono font-bold text-lg">03. Pomodoro 25/5</div>
+                                <h3 class="font-bold text-sm text-white mt-1">Bloques de Enfoque</h3>
+                                <p class="text-xs text-slate-400 mt-1">Bloques de 25 minutos con 5 de descanso activo mantienen tu atención al 100% sin agotamiento mental.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- ============================================================== -->
+                <!-- 6. BARRA LATERAL (SIDEBAR CON WIDGETS Y AD SATELLITE)          -->
+                <!-- ============================================================== -->
+                <aside class="lg:col-span-4 space-y-6" aria-label="Barra lateral de utilidades y motivación">
+                    
+                    <!-- WIDGET 1: TEST RÁPIDO DEL DÍA -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                                <h3 class="font-bold text-sm text-slate-900 dark:text-white">
+                                    Desafío del Día
+                                </h3>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-semibold">
+                                +50 EXP
+                            </span>
+                        </div>
+                        <p id="daily-challenge-question" class="text-xs text-slate-600 dark:text-slate-400 mt-3 font-medium">
+                            ¿Cuánto dura el mandato de los Diputados del Congreso según el artículo 68.4 de la CE?
+                        </p>
+                        <div id="daily-challenge-options" class="mt-3 space-y-2">
+                            <button type="button" onclick="checkQuickAnswer(this, false, 'El mandato de los Diputados dura cuatro años (art. 68.4 CE).')" class="w-full text-left px-3 py-2 text-xs rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                                A) 5 años
+                            </button>
+                            <button type="button" onclick="checkQuickAnswer(this, true, '¡Correcto! El art. 68.4 CE dice: El Congreso es elegido por cuatro años.')" class="w-full text-left px-3 py-2 text-xs rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                                B) 4 años
+                            </button>
+                            <button type="button" onclick="checkQuickAnswer(this, false, 'El art. 68.4 CE no prevé 3 años prorrogables.')" class="w-full text-left px-3 py-2 text-xs rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                                C) 3 años prorrogables
+                            </button>
+                        </div>
+                        <div id="quick-challenge-feedback" class="hidden mt-3 text-xs p-2.5 rounded-lg"></div>
+                    </div>
+
+                    <!-- PUBLICIDAD: SIDEBAR ADSENSE SLOT (300x250 / 300x600) -->
+                    <div class="adsense-sidebar-slot rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 flex flex-col items-center justify-center p-4 text-center overflow-hidden" 
+                         role="complementary" aria-label="Espacio de Publicidad Lateral">
+                        <span class="text-[10px] tracking-widest uppercase font-semibold text-slate-400 dark:text-slate-500 mb-1">
+                            — PUBLICIDAD —
+                        </span>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">
+                            Espacio para Bloque Vertical / Rectángulo Mediano (300x250 o 300x600)
+                        </div>
+                    </div>
+
+                    <!-- WIDGET 2: PREGUNTAS MÁS FALLADAS -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+                        <h3 class="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                            <span class="text-rose-500">⚠️</span> Preguntas Trampa Más Falladas
+                        </h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                            El 68% de los opositores tropieza en estos conceptos:
+                        </p>
+                        <div class="mt-4 space-y-3">
+                            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                                <div class="flex items-center justify-between text-[11px] font-semibold text-rose-600 dark:text-rose-400 mb-1">
+                                    <span>Ley 39/2015</span>
+                                    <span>Tasa de error: 74%</span>
+                                </div>
+                                <p class="text-xs font-medium text-slate-800 dark:text-slate-200">
+                                    Diferencia exacta entre cómputo en días hábiles y naturales (sábados inhábiles en LPAC).
+                                </p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+                                <div class="flex items-center justify-between text-[11px] font-semibold text-rose-600 dark:text-rose-400 mb-1">
+                                    <span>CE 1978 - Art. 116</span>
+                                    <span>Tasa de error: 69%</span>
+                                </div>
+                                <p class="text-xs font-medium text-slate-800 dark:text-slate-200">
+                                    Quién declara y autoriza el Estado de Alarma vs Estado de Sitio vs Excepción.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WIDGET 3: RACHA Y MOTIVACIÓN RÁPIDA -->
+                    <div class="bg-gradient-to-br from-brand-600 to-indigo-700 rounded-2xl p-5 text-white shadow-soft">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs uppercase tracking-wider font-semibold text-brand-200">Tu Racha de Estudio</span>
+                            <span class="text-xl">🔥</span>
+                        </div>
+                        <div class="mt-2 flex items-baseline gap-2">
+                            <span id="streak-counter" class="text-3xl font-extrabold font-mono">5</span>
+                            <span class="text-sm text-brand-100 font-medium">días consecutivos</span>
+                        </div>
+                        <p class="text-xs text-brand-100 mt-2 italic">
+                            "El éxito es la suma de pequeños esfuerzos repetidos día tras día."
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-white/20 flex items-center justify-between text-xs font-semibold">
+                            <span>Objetivo de hoy:</span>
+                            <span class="px-2 py-0.5 rounded bg-white/20">20 / 30 preguntas</span>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN FAQ / PREGUNTAS FRECUENTES (SEO)   -->
+        <!-- ========================================== -->
+        <section id="contacto-faq" class="max-w-4xl mx-auto px-4 py-12 border-t border-slate-200/80 dark:border-slate-800/80">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">
+                    Resolvemos tus dudas
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+                    Preguntas Frecuentes
+                </h2>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
+                    Todo lo que necesitas saber sobre el funcionamiento de los simulacros en EstudiaPro.
+                </p>
+            </div>
+
+            <div class="space-y-3" id="faq-accordion">
+                <details class="group bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 transition-all">
+                    <summary class="flex items-center justify-between font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 cursor-pointer list-none">
+                        <span>¿Los tests son 100% gratuitos o hay límite de preguntas?</span>
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                        Nuestra misión es democratizar la preparación de exámenes y oposiciones. Todos los simulacros interactivos, cronómetros y explicaciones son de libre acceso sin muros de pago ni tarjetas de crédito.
+                    </p>
+                </details>
+
+                <details class="group bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 transition-all">
+                    <summary class="flex items-center justify-between font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 cursor-pointer list-none">
+                        <span>¿Cómo penalizan las preguntas falladas en la nota neta?</span>
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                        Aplicamos la fórmula oficial de las Administraciones Públicas: cada respuesta incorrecta resta un tercio de acierto (0,33 puntos sobre 1 en preguntas de 4 opciones). Si no respondes, ni suma ni resta.
+                    </p>
+                </details>
+
+                <details class="group bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 transition-all">
+                    <summary class="flex items-center justify-between font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 cursor-pointer list-none">
+                        <span>¿Puedo proponer preguntas o reportar una errata legislativa?</span>
+                        <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                        ¡Por supuesto! En el pie de página dispones de un formulario de contacto directo. Nuestro comité docente revisa cada reporte en menos de 24 horas laborables.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================== -->
+    <!-- MODAL LECTOR DE ARTÍCULOS COMPLETOS (INMERSIVO)                -->
+    <!-- ============================================================== -->
+    <div id="article-reader-modal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="reader-article-title">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full border border-slate-200 dark:border-slate-800 shadow-2xl relative my-auto max-h-[90vh] flex flex-col overflow-hidden">
+            
+            <!-- Sticky Modal Bar -->
+            <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-white/90 dark:bg-slate-900/90 backdrop-blur sticky top-0 z-10">
+                <span id="reader-category-pill" class="px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-lg bg-brand-100 text-brand-800 dark:bg-brand-950 dark:text-brand-300">
+                    Guía de Estudio
+                </span>
+                <button type="button" id="close-article-modal-btn" aria-label="Cerrar artículo" class="p-2 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Scrollable Content Body -->
+            <div class="p-6 sm:p-8 overflow-y-auto space-y-6">
+                <!-- Cover Image -->
+                <div class="rounded-2xl overflow-hidden aspect-[16/9] shadow-soft">
+                    <img id="reader-cover-image" src="" alt="" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Meta Header -->
+                <div>
+                    <h2 id="reader-article-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight"></h2>
+                    <div class="mt-3 flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                        <span id="reader-author-name" class="font-bold text-slate-800 dark:text-slate-200"></span>
+                        <span>•</span>
+                        <span id="reader-publish-date"></span>
+                        <span>•</span>
+                        <span id="reader-reading-time"></span>
+                    </div>
+                </div>
+
+                <!-- Article Rich Body Content -->
+                <div id="reader-article-content" class="text-sm sm:text-base text-slate-700 dark:text-slate-300 space-y-4 leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4">
+                    <!-- Injected dynamically -->
+                </div>
+
+                <!-- Action CTA at end of article -->
+                <div class="mt-8 p-5 rounded-2xl bg-brand-50 dark:bg-brand-950/60 border border-brand-200 dark:border-brand-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <h4 class="font-bold text-brand-900 dark:text-brand-200 text-sm">¿Listo para poner a prueba lo aprendido?</h4>
+                        <p class="text-xs text-brand-700 dark:text-brand-300 mt-0.5">Haz un simulacro interactivo gratuito ahora mismo.</p>
+                    </div>
+                    <button type="button" id="reader-test-cta-btn" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-md transition-colors whitespace-nowrap">
+                        Ir al Simulador de Tests →
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- MODAL / POPUP INTERACTIVO DEL TEMPORIZADOR POMODORO            -->
+    <!-- ============================================================== -->
+    <div id="pomodoro-modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-200" role="dialog" aria-modal="true" aria-labelledby="pomodoro-modal-title">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-md w-full border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-2xl relative">
+            
+            <button type="button" id="close-pomodoro-modal-btn" aria-label="Cerrar temporizador Pomodoro" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <!-- Mode Selector Tabs -->
+            <div class="flex items-center justify-center gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl mb-6 text-xs font-bold">
+                <button type="button" id="pomo-mode-study" class="pomodoro-tab-btn active px-4 py-2 rounded-lg bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 shadow-sm transition-all" data-duration="1500">
+                    Estudio (25m)
+                </button>
+                <button type="button" id="pomo-mode-short" class="pomodoro-tab-btn px-4 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" data-duration="300">
+                    Pausa Corta (5m)
+                </button>
+                <button type="button" id="pomo-mode-long" class="pomodoro-tab-btn px-4 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" data-duration="900">
+                    Pausa Larga (15m)
+                </button>
+            </div>
+
+            <!-- Big Timer Dial Display -->
+            <div class="text-center py-4">
+                <div id="pomo-timer-display" class="text-6xl sm:text-7xl font-mono font-extrabold text-slate-900 dark:text-white tracking-tighter">
+                    25:00
+                </div>
+                <p id="pomo-status-label" class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mt-2">
+                    Sesión de Enfoque Profundo
+                </p>
+            </div>
+
+            <!-- Timer Action Buttons -->
+            <div class="mt-6 flex items-center justify-center gap-3">
+                <button type="button" id="pomo-start-btn" class="px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg shadow-brand-500/25 transition-all">
+                    Iniciar
+                </button>
+                <button type="button" id="pomo-pause-btn" class="hidden px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-base transition-all">
+                    Pausar
+                </button>
+                <button type="button" id="pomo-reset-btn" class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Reiniciar tiempo">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Total Completed Pomodoros Counter -->
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400">
+                <span>Pomodoros completados hoy: </span>
+                <span id="pomo-completed-count" class="font-bold text-brand-600 dark:text-brand-400 font-mono">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 7. FOOTER / PIE DE PÁGINA                  -->
+    <!-- ========================================== -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-16 transition-colors duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                
+                <!-- Brand Information & Mission -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-md">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-extrabold text-slate-900 dark:text-white">
+                            Estudia<span class="text-brand-600 dark:text-brand-400">Pro</span>
+                        </span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">
+                        La plataforma educativa de referencia para preparar oposiciones, pruebas EBAU, DGT y exámenes con simulaciones interactivas, active recall y temporizador Pomodoro.
+                    </p>
+                    <div class="text-xs text-slate-500 dark:text-slate-400">
+                        © 2026 EstudiaPro Digital. Todos los derechos reservados.
+                    </div>
+                </div>
+
+                <!-- Column 2: Temarios Populares -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+                        Temarios Populares
+                    </h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                        <li><a href="javascript:void(0)" onclick="loadTestPreset('constitucion')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Constitución Española (1978)</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadTestPreset('ley39')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Ley 39/2015 del PAC</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadTestPreset('dgt')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Permiso B de Conducir DGT</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadTestPreset('ebau_bio')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">EBAU Biología Celular</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadTestPreset('ortografia')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Ortografía RAE Oposiciones</a></li>
+                        <li><a href="javascript:void(0)" onclick="loadTestPreset('ingles')" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Inglés Oficial B2/C1</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: 8 Guías de Estudio -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+                        8 Guías de Estudio
+                    </h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(0)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">1. Palacio de la Memoria y Leyes</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(1)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">2. El Método Feynman</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(2)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">3. 10 Preguntas Trampa DGT</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(3)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">4. Pomodoro vs Time Blocking</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(4)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">5. Calendario EBAU 3 Meses</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(5)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">6. Cómputo Plazos Ley 39</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(6)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">7. Nutrición Cerebral y Memoria</a></li>
+                        <li><a href="javascript:void(0)" onclick="openArticleModal(7)" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">8. Ansiedad y Respiración 4-7-8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal & Cumplimiento AdSense -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+                        Legal y Cumplimiento
+                    </h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                        <li><a href="aviso-legal.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Política de Cookies</a></li>
+                        <li><a href="javascript:void(0)" onclick="openCookieSettingsModal()" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Gestionar Consentimiento</a></li>
+                        <li><a href="contacto.html" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Contacto y Soporte</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- AdSense Legal Disclaimer & Bottom Bar -->
+            <div class="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+                <p>
+                    Aviso: EstudiaPro no mantiene relación orgánica con órganos examinadores de la Administración Pública. Los tests son material pedagógico de elaboración propia y de dominio público.
+                </p>
+                <div class="flex items-center gap-4">
+                    <span>Español (ES)</span>
+                    <span>•</span>
+                    <a href="#main-content" class="hover:text-brand-600 transition-colors">Subir arriba ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================== -->
+    <!-- BANNER DE COOKIES / RGPD                                       -->
+    <!-- ============================================================== -->
+    <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-50 hidden bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl">
+        <div class="flex items-start gap-3">
+            <span class="text-2xl">🍪</span>
+            <div class="flex-grow">
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Privacidad y Cookies</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
+                    Utilizamos cookies técnicas y analíticas (Google Analytics) para mejorar tu experiencia de estudio y ofrecer publicidad personalizada mediante Google AdSense.
+                </p>
+                <div class="mt-3 flex items-center gap-2">
+                    <button type="button" id="accept-all-cookies-btn" class="px-3.5 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs transition-colors">
+                        Aceptar todas
+                    </button>
+                    <button type="button" id="accept-essential-cookies-btn" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                        Solo necesarias
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- JAVASCRIPT MODERNO: MOTOR DE TESTS, 8 ARTÍCULOS Y POMODORO     -->
+    <!-- ============================================================== -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        'use strict';
+
+        // ==========================================
+        // 1. TEMA OSCURO / CLARO
+        // ==========================================
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        function updateThemeIcons(isDark) {
+            const sunIcon = document.getElementById('theme-sun-icon');
+            const moonIcon = document.getElementById('theme-moon-icon');
+            if (isDark) {
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        }
+        updateThemeIcons(document.documentElement.classList.contains('dark'));
+
+        themeToggleBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.toggle('dark');
+            try {
+                localStorage.setItem('estudiapro_theme', isDark ? 'dark' : 'light');
+            } catch(e) {}
+            updateThemeIcons(isDark);
+        });
+
+        // ==========================================
+        // 2. MENÚ MÓVIL Y BÚSQUEDA EN VIVO
+        // ==========================================
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = mobileNav.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', !isOpen);
+        });
+
+        // Atajo '/' para enfocar buscador
+        window.addEventListener('keydown', (e) => {
+            if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                const quickSearch = document.getElementById('header-quick-search');
+                if (quickSearch) {
+                    quickSearch.focus();
+                    quickSearch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        });
+
+        // Filtrado reactivo de tarjetas de tests y artículos
+        function filterContent(query) {
+            const normalized = query.toLowerCase().trim();
+            
+            // Tarjetas de tests
+            document.querySelectorAll('.test-item-card').forEach(card => {
+                const keywords = card.getAttribute('data-keywords') || '';
+                const title = card.querySelector('h3')?.innerText.toLowerCase() || '';
+                if (!normalized || keywords.includes(normalized) || title.includes(normalized)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Tarjetas de artículos
+            document.querySelectorAll('.article-card').forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (!normalized || text.includes(normalized)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        const headerSearch = document.getElementById('header-quick-search');
+        const mobileSearch = document.getElementById('mobile-quick-search');
+        const heroSearchInput = document.getElementById('hero-search-input');
+        const heroSearchForm = document.getElementById('hero-search-form');
+
+        [headerSearch, mobileSearch, heroSearchInput].forEach(input => {
+            if (input) {
+                input.addEventListener('input', (e) => filterContent(e.target.value));
+            }
+        });
+
+        heroSearchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            filterContent(heroSearchInput.value);
+            document.getElementById('catalogo-tests').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Quick Tag Filter Pills
+        document.querySelectorAll('.quick-filter-tag').forEach(tagBtn => {
+            tagBtn.addEventListener('click', () => {
+                const tag = tagBtn.getAttribute('data-tag');
+                heroSearchInput.value = tagBtn.innerText.trim();
+                filterContent(tag);
+                document.getElementById('catalogo-tests').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Category Pills (Todos, Oposiciones, etc.)
+        const categoryPills = document.querySelectorAll('.category-pill-btn');
+        categoryPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                categoryPills.forEach(p => {
+                    p.classList.remove('active', 'bg-white', 'dark:bg-slate-900', 'text-brand-600', 'dark:text-brand-400', 'shadow-sm');
+                    p.classList.add('text-slate-600', 'dark:text-slate-400');
+                });
+                pill.classList.add('active', 'bg-white', 'dark:bg-slate-900', 'text-brand-600', 'dark:text-brand-400', 'shadow-sm');
+                pill.classList.remove('text-slate-600', 'dark:text-slate-400');
+
+                const selectedCategory = pill.getAttribute('data-category');
+                document.querySelectorAll('.test-item-card').forEach(card => {
+                    const cardCat = card.getAttribute('data-category');
+                    if (selectedCategory === 'all' || cardCat === selectedCategory) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // ==============================================================
+        // 3. BASE DE DATOS EXTENDIDA DE PREGUNTAS TIPO TEST
+        // ==============================================================
+        const QUESTION_DATABASE = {
+            constitucion: [
+                {
+                    id: 'CE-101',
+                    category: "Constitución Española",
+                    difficulty: "Nivel Oposición",
+                    question: "¿Cuál es la forma política del Estado español según el artículo 1.3 de la Constitución?",
+                    options: [
+                        "República democrática de trabajadores",
+                        "Monarquía parlamentaria",
+                        "Monarquía constitucional representativa",
+                        "Estado social y democrático unitario"
+                    ],
+                    correctIndex: 1,
+                    explanation: "El artículo 1.3 de la Constitución Española de 1978 establece literalmente: 'La forma política del Estado español es la Monarquía parlamentaria'."
+                },
+                {
+                    id: 'CE-102',
+                    category: "Constitución Española",
+                    difficulty: "Nivel Oposición",
+                    question: "Según el artículo 14 de la Constitución, los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de:",
+                    options: [
+                        "Nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social",
+                        "Únicamente nacionalidad, género y convicciones políticas",
+                        "Nivel socioeconómico, estado civil y profesión exclusivamente",
+                        "Territorio de residencia y lengua materna únicamente"
+                    ],
+                    correctIndex: 0,
+                    explanation: "El art. 14 de la CE proclama la cláusula general de igualdad y enumera expresamente: nacimiento, raza, sexo, religión, opinión o cualquier otra circunstancia personal o social."
+                },
+                {
+                    id: 'CE-103',
+                    category: "Constitución Española",
+                    difficulty: "Nivel Oposición",
+                    question: "¿A quién corresponde la sanción y promulgación de las leyes aprobadas por las Cortes Generales?",
+                    options: [
+                        "Al Presidente del Gobierno",
+                        "Al Presidente del Congreso de los Diputados",
+                        "Al Rey",
+                        "Al Tribunal Constitucional"
+                    ],
+                    correctIndex: 2,
+                    explanation: "Conforme al artículo 62.a) y artículo 91 de la CE, corresponde al Rey sancionar y promulgar las leyes en el plazo de quince días y ordenar su inmediata publicación."
+                },
+                {
+                    id: 'CE-104',
+                    category: "Constitución Española",
+                    difficulty: "Nivel Oposición",
+                    question: "¿Cuál de los siguientes estados NO está regulado en el artículo 116 de la Constitución Española?",
+                    options: [
+                        "Estado de Alarma",
+                        "Estado de Excepción",
+                        "Estado de Sitio",
+                        "Estado de Emergencia Nacional"
+                    ],
+                    correctIndex: 3,
+                    explanation: "El artículo 116 regula exclusivamente tres estados excepcionales: Alarma, Excepción y Sitio. La denominación 'Emergencia Nacional' no existe constitucionalmente en el art. 116."
+                },
+                {
+                    id: 'CE-105',
+                    category: "Constitución Española",
+                    difficulty: "Nivel Oposición",
+                    question: "¿Qué mayoría se exige en el Congreso para la investidura del Presidente del Gobierno en primera votación?",
+                    options: [
+                        "Mayoría simple de los presentes",
+                        "Mayoría absoluta de sus miembros",
+                        "Mayoría cualificada de tres quintos",
+                        "Mayoría de dos tercios"
+                    ],
+                    correctIndex: 1,
+                    explanation: "Según el art. 99.3 de la CE, en primera votación es obligatoria la mayoría absoluta. De no alcanzarse, 48 horas después se vota y basta la mayoría simple."
+                },
+                {
+                    id: 'CE-106',
+                    category: "Constitución Española",
+                    difficulty: "Nivel Oposición",
+                    question: "¿Qué artículo de la Constitución reconoce expresamente el derecho de asociación?",
+                    options: [
+                        "Artículo 20",
+                        "Artículo 22",
+                        "Artículo 27",
+                        "Artículo 28"
+                    ],
+                    correctIndex: 1,
+                    explanation: "El artículo 22 de la CE regula el derecho de asociación; el art. 20 regula la libertad de expresión, el 27 el derecho a la educación y el 28 la libertad sindical y huelga."
+                }
+            ],
+            ley39: [
+                {
+                    id: 'LPAC-201',
+                    category: "Ley 39/2015 LPAC",
+                    difficulty: "Dificultad Alta",
+                    question: "Siempre que por Ley o en el Derecho de la Unión Europea no se exprese otro cómputo, cuando los plazos se señalen por días, ¿cómo se entienden?",
+                    options: [
+                        "Naturales en todo caso",
+                        "Hábiles, excluyéndose del cómputo los sábados, los domingos y los declarados festivos",
+                        "Hábiles, incluyendo los sábados pero excluyendo domingos y festivos",
+                        "Inhábiles solo domingos"
+                    ],
+                    correctIndex: 1,
+                    explanation: "Artículo 30.2 de la Ley 39/2015: 'Siempre que por Ley o en el Derecho de la Unión Europea no se exprese otro cómputo, cuando los plazos se señalen por días, se entiende que éstos son hábiles, excluyéndose del cómputo los sábados, los domingos y los declarados festivos'."
+                },
+                {
+                    id: 'LPAC-202',
+                    category: "Ley 39/2015 LPAC",
+                    difficulty: "Dificultad Alta",
+                    question: "¿En qué plazo se entenderá rechazada la notificación por medios electrónicos si el interesado no accede a su contenido?",
+                    options: [
+                        "A los 5 días naturales",
+                        "A los 10 días naturales desde la puesta a disposición",
+                        "A los 15 días hábiles",
+                        "A los 30 días naturales"
+                    ],
+                    correctIndex: 1,
+                    explanation: "Artículo 43.2 de la Ley 39/2015: 'Cuando la notificación por medios electrónicos sea de carácter obligatorio [...] se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición sin que se acceda a su contenido'."
+                },
+                {
+                    id: 'LPAC-203',
+                    category: "Ley 39/2015 LPAC",
+                    difficulty: "Dificultad Alta",
+                    question: "¿Cuáles son los actos de las Administraciones Públicas nulos de pleno derecho según el artículo 47.1?",
+                    options: [
+                        "Los que incurran en cualquier infracción del ordenamiento jurídico, incluso la desviación de poder",
+                        "Los que lesionen los derechos y libertades susceptibles de amparo constitucional",
+                        "El defecto de forma no determinante",
+                        "La realización de actuaciones fuera del tiempo establecido"
+                    ],
+                    correctIndex: 1,
+                    explanation: "El art. 47.1.a) establece que son nulos de pleno derecho los que lesionen derechos y libertades susceptibles de amparo constitucional (arts. 14 a 29 y 30.2 CE). Los demás son supuestos de anulabilidad (art. 48)."
+                },
+                {
+                    id: 'LPAC-204',
+                    category: "Ley 39/2015 LPAC",
+                    difficulty: "Dificultad Alta",
+                    question: "¿Qué efecto general tiene la falta de resolución expresa en procedimientos iniciados a solicitud del interesado?",
+                    options: [
+                        "El silencio administrativo estimatorio como regla general, salvo que una norma con rango de ley establezca lo contrario",
+                        "Siempre el silencio negativo o desestimatorio",
+                        "La caducidad automática del procedimiento a los 3 meses",
+                        "La prescripción de la solicitud"
+                    ],
+                    correctIndex: 0,
+                    explanation: "Artículo 24.1 de la Ley 39/2015: la regla general en procedimientos a solicitud de interesado es el silencio positivo o estimatorio, salvo excepciones legales tasadas."
+                }
+            ],
+            dgt: [
+                {
+                    id: 'DGT-301',
+                    category: "DGT Permiso B",
+                    difficulty: "Oficial Autoescuela",
+                    question: "Como norma general en vías urbanas con un solo carril por sentido de circulación, ¿cuál es la velocidad máxima permitida?",
+                    options: [
+                        "50 km/h",
+                        "30 km/h",
+                        "20 km/h",
+                        "40 km/h"
+                    ],
+                    correctIndex: 1,
+                    explanation: "Conforme a la reforma del Reglamento General de Circulación, el límite genérico en vías de un único carril por sentido es de 30 km/h (y 20 km/h si la calzada no tiene aceras diferenciadas)."
+                },
+                {
+                    id: 'DGT-302',
+                    category: "DGT Permiso B",
+                    difficulty: "Oficial Autoescuela",
+                    question: "¿Cuál es la tasa máxima de alcohol en aire espirado para conductores noveles durante los dos primeros años?",
+                    options: [
+                        "0,25 mg/l",
+                        "0,15 mg/l",
+                        "0,05 mg/l",
+                        "0,30 mg/l"
+                    ],
+                    correctIndex: 1,
+                    explanation: "Para conductores con antigüedad inferior a 2 años y profesionales, la tasa máxima en aire espirado es de 0,15 mg/l (0,30 g/l en sangre)."
+                },
+                {
+                    id: 'DGT-303',
+                    category: "DGT Permiso B",
+                    difficulty: "Oficial Autoescuela",
+                    question: "En una glorieta o rotonda sin señalizar, ¿qué vehículo tiene la prioridad de paso?",
+                    options: [
+                        "El que pretenda acceder desde la vía de mayor velocidad",
+                        "El que circula por la derecha fuera de la glorieta",
+                        "El que ya se encuentra circulando dentro de la glorieta",
+                        "El vehículo más pesado o de transporte público"
+                    ],
+                    correctIndex: 2,
+                    explanation: "En las glorietas, la prioridad de paso corresponde siempre a los vehículos que ya están dentro de la vía circular frente a los que intentan acceder."
+                }
+            ],
+            ebau_bio: [
+                {
+                    id: 'EBAU-401',
+                    category: "EBAU Biología",
+                    difficulty: "2º Bachillerato",
+                    question: "¿Qué orgánulo celular es el responsable directo de la síntesis y maduración de proteínas unidas a membranas?",
+                    options: [
+                        "Retículo Endoplasmático Rugoso (RER)",
+                        "Aparato de Golgi exclusivamente",
+                        "Mitocondria",
+                        "Peroxisoma"
+                    ],
+                    correctIndex: 0,
+                    explanation: "El RER posee ribosomas adheridos en su cara externa donde se traduce y transloca el péptido naciente para su correcto plegamiento."
+                },
+                {
+                    id: 'EBAU-402',
+                    category: "EBAU Biología",
+                    difficulty: "2º Bachillerato",
+                    question: "¿En qué fase de la meiosis tiene lugar el entrecruzamiento (crossing-over) entre cromátidas no hermanas?",
+                    options: [
+                        "Profase II",
+                        "Profase I (Paquiteno)",
+                        "Metafase I",
+                        "Telofase I"
+                    ],
+                    correctIndex: 1,
+                    explanation: "El entrecruzamiento o recombinación genética tiene lugar en la subfase de Paquiteno dentro de la Profase I meiótica, garantizando la variabilidad genética."
+                }
+            ],
+            ortografia: [
+                {
+                    id: 'RAE-501',
+                    category: "Ortografía RAE",
+                    difficulty: "Oposiciones Policía/GC",
+                    question: "¿Cuál de las siguientes palabras está correctamente escrita según la última edición de la Ortografía de la RAE?",
+                    options: [
+                        "Ex-presidente",
+                        "Ex presidente",
+                        "Expresidente",
+                        "Ex–Presidente"
+                    ],
+                    correctIndex: 2,
+                    explanation: "La RAE establece que el prefijo 'ex-' se escribe soldado a la palabra base cuando esta es léxicamente simple: 'expresidente', 'exnovio', 'exministro'."
+                },
+                {
+                    id: 'RAE-502',
+                    category: "Ortografía RAE",
+                    difficulty: "Oposiciones Policía/GC",
+                    question: "¿En cuál de las siguientes opciones la palabra 'solo / sólo' NO debe llevar tilde?",
+                    options: [
+                        "En ningún caso según la recomendación general de la RAE de no acentuar los adverbios ni adjetivos 'solo'",
+                        "Siempre que funcione como adverbio equivalente a 'solamente'",
+                        "Cuando forme parte de una oración interrogativa indirecta",
+                        "Únicamente cuando vaya al inicio de frase"
+                    ],
+                    correctIndex: 0,
+                    explanation: "La norma académica general indica que la palabra 'solo', tanto en función de adverbio como de adjetivo, es una palabra llana terminada en vocal y no debe tildarse."
+                }
+            ],
+            ingles: [
+                {
+                    id: 'ENG-601',
+                    category: "Inglés B2/C1",
+                    difficulty: "Cambridge / EBAU",
+                    question: "Complete the sentence: 'She succeeded _____ passing the state exam on her first attempt.'",
+                    options: [
+                        "to",
+                        "at",
+                        "in",
+                        "for"
+                    ],
+                    correctIndex: 2,
+                    explanation: "The verb 'succeed' takes the dependent preposition 'in' followed by a gerund: 'succeed in doing something'."
+                },
+                {
+                    id: 'ENG-602',
+                    category: "Inglés B2/C1",
+                    difficulty: "Cambridge / EBAU",
+                    question: "Choose the correct idiom: 'He had to _____ the bullet and study all weekend.'",
+                    options: [
+                        "hit",
+                        "bite",
+                        "catch",
+                        "shoot"
+                    ],
+                    correctIndex: 1,
+                    explanation: "The idiom 'bite the bullet' means to face a difficult situation with courage and determination."
+                }
+            ]
+        };
+
+        // ==============================================================
+        // 4. MOTOR DE TEST INTERACTIVO FUNCIONAL
+        // ==============================================================
+        let currentQuestions = [...QUESTION_DATABASE.constitucion];
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        let quizTimerSeconds = 0;
+        let quizTimerInterval = null;
+        let soundMuted = false;
+
+        const qSubjectTitle = document.getElementById('quiz-subject-title');
+        const qCategoryBadge = document.getElementById('quiz-category-badge');
+        const qDifficultyBadge = document.getElementById('quiz-difficulty-badge');
+        const qIdTag = document.getElementById('quiz-id-tag');
+        const qQuestionText = document.getElementById('quiz-question-text');
+        const qOptionsContainer = document.getElementById('quiz-options-container');
+        const qExplanationBox = document.getElementById('quiz-explanation-box');
+        const qExplanationIcon = document.getElementById('quiz-explanation-icon');
+        const qExplanationTitle = document.getElementById('quiz-explanation-title');
+        const qExplanationText = document.getElementById('quiz-explanation-text');
+        const qProgressBar = document.getElementById('quiz-progress-bar');
+        const qProgressPercent = document.getElementById('quiz-progress-percent');
+        const qCounterText = document.getElementById('quiz-counter-text');
+        const qScoreCorrect = document.getElementById('quiz-score-correct');
+        const qScoreIncorrect = document.getElementById('quiz-score-incorrect');
+        const qScoreNet = document.getElementById('quiz-score-net');
+        const qNextBtn = document.getElementById('quiz-next-btn');
+        const qPrevBtn = document.getElementById('quiz-prev-btn');
+        const qResetBtn = document.getElementById('quiz-reset-btn');
+        const qTimerDisplay = document.getElementById('quiz-timer-display');
+        const qSoundToggle = document.getElementById('quiz-sound-toggle');
+        const qSoundOnIcon = document.getElementById('quiz-sound-on-icon');
+        const qSoundOffIcon = document.getElementById('quiz-sound-off-icon');
+
+        // Web Audio API sintético
+        let audioCtx = null;
+        function playTone(freq, type, duration) {
+            if (soundMuted) return;
+            try {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch(e) {}
+        }
+
+        function playSuccessSound() {
+            playTone(587.33, 'sine', 0.15);
+            setTimeout(() => playTone(880.00, 'sine', 0.25), 100);
+        }
+
+        function playErrorSound() {
+            playTone(260.00, 'sawtooth', 0.2);
+            setTimeout(() => playTone(220.00, 'sawtooth', 0.3), 150);
+        }
+
+        qSoundToggle.addEventListener('click', () => {
+            soundMuted = !soundMuted;
+            qSoundOnIcon.classList.toggle('hidden', soundMuted);
+            qSoundOffIcon.classList.toggle('hidden', !soundMuted);
+        });
+
+        function startQuizTimer() {
+            if (quizTimerInterval) clearInterval(quizTimerInterval);
+            quizTimerInterval = setInterval(() => {
+                quizTimerSeconds++;
+                const mins = String(Math.floor(quizTimerSeconds / 60)).padStart(2, '0');
+                const secs = String(quizTimerSeconds % 60).padStart(2, '0');
+                qTimerDisplay.textContent = `${mins}:${secs}`;
+            }, 1000);
+        }
+
+        function renderCurrentQuestion() {
+            const q = currentQuestions[currentQuestionIndex];
+            if (!q) return;
+
+            qSubjectTitle.textContent = `Simulador: ${q.category}`;
+            qCategoryBadge.textContent = q.category;
+            qDifficultyBadge.textContent = q.difficulty;
+            qIdTag.textContent = `ID: #${q.id}`;
+            qQuestionText.textContent = `${currentQuestionIndex + 1}. ${q.question}`;
+            qCounterText.textContent = `Pregunta ${currentQuestionIndex + 1} de ${currentQuestions.length}`;
+            
+            const progress = Math.round(((currentQuestionIndex + 1) / currentQuestions.length) * 100);
+            qProgressBar.style.width = `${progress}%`;
+            qProgressBar.setAttribute('aria-valuenow', progress);
+            qProgressPercent.textContent = `${progress}% Completado`;
+
+            qPrevBtn.disabled = currentQuestionIndex === 0;
+            if (currentQuestionIndex === 0) {
+                qPrevBtn.classList.add('cursor-not-allowed', 'text-slate-400', 'dark:text-slate-600');
+            } else {
+                qPrevBtn.classList.remove('cursor-not-allowed', 'text-slate-400', 'dark:text-slate-600');
+            }
+
+            if (currentQuestionIndex === currentQuestions.length - 1) {
+                qNextBtn.innerHTML = `<span>Finalizar Simulacro</span>`;
+            } else {
+                qNextBtn.innerHTML = `<span>Siguiente</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>`;
+            }
+
+            qOptionsContainer.innerHTML = '';
+            const letters = ['A', 'B', 'C', 'D'];
+            const hasAnswered = userAnswers[currentQuestionIndex] !== undefined;
+            const chosenAnswer = userAnswers[currentQuestionIndex];
+
+            q.options.forEach((optText, idx) => {
+                const optButton = document.createElement('button');
+                optButton.type = 'button';
+                optButton.className = `w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3.5 focus:outline-none focus:ring-2 focus:ring-brand-500 `;
+
+                let letterClass = 'w-7 h-7 rounded-lg font-mono font-bold text-xs flex items-center justify-center flex-shrink-0 transition-colors ';
+                
+                if (!hasAnswered) {
+                    optButton.className += 'bg-slate-50/70 hover:bg-slate-100 dark:bg-slate-800/60 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:border-brand-400';
+                    letterClass += 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-600';
+                } else {
+                    if (idx === q.correctIndex) {
+                        optButton.className += 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 dark:border-emerald-600 text-emerald-950 dark:text-emerald-100 shadow-sm';
+                        letterClass += 'bg-emerald-600 text-white';
+                    } else if (idx === chosenAnswer) {
+                        optButton.className += 'bg-rose-50 dark:bg-rose-950/60 border-rose-500 dark:border-rose-600 text-rose-950 dark:text-rose-100 shadow-sm';
+                        letterClass += 'bg-rose-600 text-white';
+                    } else {
+                        optButton.className += 'bg-slate-50 dark:bg-slate-900/40 border-slate-200/50 dark:border-slate-800/50 text-slate-400 dark:text-slate-600 opacity-60';
+                        letterClass += 'bg-slate-200 dark:bg-slate-800 text-slate-500';
+                    }
+                    optButton.disabled = true;
+                }
+
+                optButton.innerHTML = `
+                    <span class="${letterClass}">${letters[idx]}</span>
+                    <span class="text-xs sm:text-sm font-medium leading-relaxed pt-0.5">${optText}</span>
+                `;
+
+                if (!hasAnswered) {
+                    optButton.addEventListener('click', () => handleOptionSelect(idx));
+                }
+
+                qOptionsContainer.appendChild(optButton);
+            });
+
+            if (hasAnswered) {
+                showExplanationBox(chosenAnswer === q.correctIndex, q.explanation);
+            } else {
+                qExplanationBox.classList.add('hidden');
+            }
+
+            updateScoreboard();
+        }
+
+        function handleOptionSelect(selectedIndex) {
+            const q = currentQuestions[currentQuestionIndex];
+            userAnswers[currentQuestionIndex] = selectedIndex;
+
+            if (selectedIndex === q.correctIndex) {
+                playSuccessSound();
+            } else {
+                playErrorSound();
+            }
+
+            renderCurrentQuestion();
+        }
+
+        function showExplanationBox(isCorrect, explanationText) {
+            qExplanationBox.classList.remove('hidden', 'bg-emerald-50', 'dark:bg-emerald-950/40', 'border-emerald-300', 'dark:border-emerald-800', 'bg-rose-50', 'dark:bg-rose-950/40', 'border-rose-300', 'dark:border-rose-800');
+            
+            if (isCorrect) {
+                qExplanationBox.classList.add('bg-emerald-50', 'dark:bg-emerald-950/40', 'border-emerald-300', 'dark:border-emerald-800');
+                qExplanationIcon.innerHTML = `<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-600 text-white text-xs font-bold">✓</span>`;
+                qExplanationTitle.textContent = "¡Respuesta Correcta!";
+                qExplanationTitle.className = "text-sm font-bold tracking-tight text-emerald-800 dark:text-emerald-300";
+            } else {
+                qExplanationBox.classList.add('bg-rose-50', 'dark:bg-rose-950/40', 'border-rose-300', 'dark:border-rose-800');
+                qExplanationIcon.innerHTML = `<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-rose-600 text-white text-xs font-bold">✗</span>`;
+                qExplanationTitle.textContent = "Respuesta Incorrecta";
+                qExplanationTitle.className = "text-sm font-bold tracking-tight text-rose-800 dark:text-rose-300";
+            }
+
+            qExplanationText.textContent = explanationText;
+        }
+
+        function updateScoreboard() {
+            let correctCount = 0;
+            let incorrectCount = 0;
+
+            Object.entries(userAnswers).forEach(([idx, chosen]) => {
+                const q = currentQuestions[parseInt(idx, 10)];
+                if (q) {
+                    if (chosen === q.correctIndex) {
+                        correctCount++;
+                    } else {
+                        incorrectCount++;
+                    }
+                }
+            });
+
+            qScoreCorrect.textContent = correctCount;
+            qScoreIncorrect.textContent = incorrectCount;
+
+            const totalQ = currentQuestions.length;
+            const netPoints = Math.max(0, correctCount - (incorrectCount / 3));
+            const gradeOn10 = (netPoints / totalQ) * 10;
+            qScoreNet.textContent = `${gradeOn10.toFixed(2)} / 10`;
+        }
+
+        qNextBtn.addEventListener('click', () => {
+            if (currentQuestionIndex < currentQuestions.length - 1) {
+                currentQuestionIndex++;
+                renderCurrentQuestion();
+            } else {
+                alert(`¡Simulacro finalizado!\n\nAciertos: ${qScoreCorrect.textContent}\nFallos: ${qScoreIncorrect.textContent}\nNota Oficial Neta: ${qScoreNet.textContent}\n\n¡Sigue practicando para asegurar tu plaza!`);
+            }
+        });
+
+        qPrevBtn.addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                renderCurrentQuestion();
+            }
+        });
+
+        qResetBtn.addEventListener('click', () => {
+            if (confirm('¿Deseas reiniciar este simulacro desde la primera pregunta?')) {
+                userAnswers = {};
+                currentQuestionIndex = 0;
+                quizTimerSeconds = 0;
+                renderCurrentQuestion();
+            }
+        });
+
+        window.loadTestPreset = function(presetKey) {
+            if (QUESTION_DATABASE[presetKey]) {
+                currentQuestions = [...QUESTION_DATABASE[presetKey]];
+                userAnswers = {};
+                currentQuestionIndex = 0;
+                quizTimerSeconds = 0;
+                renderCurrentQuestion();
+                document.getElementById('tests-interactivos').scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+
+        window.addEventListener('keydown', (e) => {
+            if (['1', '2', '3', '4'].includes(e.key) && document.activeElement.tagName !== 'INPUT') {
+                const optIndex = parseInt(e.key, 10) - 1;
+                if (userAnswers[currentQuestionIndex] === undefined) {
+                    handleOptionSelect(optIndex);
+                }
+            } else if (e.key === 'ArrowRight' && document.activeElement.tagName !== 'INPUT') {
+                qNextBtn.click();
+            } else if (e.key === 'ArrowLeft' && document.activeElement.tagName !== 'INPUT') {
+                qPrevBtn.click();
+            }
+        });
+
+        renderCurrentQuestion();
+        startQuizTimer();
+
+        // ==============================================================
+        // 5. BASE DE DATOS DE LOS 8 ARTÍCULOS Y LECTOR MODAL
+        // ==============================================================
+        const ARTICLES_DATA = [
+            {
+                title: "Cómo memorizar artículos y leyes sin olvidarlos: El Método del Palacio de la Memoria",
+                category: "Oposiciones & Leyes",
+                author: "Carlos Benítez (Preparador de Judicaturas)",
+                date: "20 de octubre de 2026",
+                readTime: "6 min de lectura",
+                image: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "constitucion",
+                content: `
+                    <p>Memorizar centenares de artículos literales es el mayor obstáculo al que se enfrenta cualquier opositor. Quienes aprueban con las mejores notas no tienen una memoria sobrehumana; utilizan técnicas mnemotécnicas de codificación espacial, conocidas desde la antigua Grecia como el <strong>Método de Loci o Palacio de la Memoria</strong>.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">¿En qué consiste el Palacio de la Memoria?</h3>
+                    <p>El cerebro humano evolucionó para recordar rutas físicas, peligros y lugares espaciales, no abstracciones jurídicas. Esta técnica aprovecha el hipocampo para asociar números de artículos y preceptos normativos con una ruta conocida de tu casa o lugar familiar.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">Los 3 pasos para memorizar la Constitución Española:</h3>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li><strong>Diseña tu ruta fija:</strong> Elige tu casa y define un recorrido invariable con 10 habitaciones o puntos clave (ej. puerta de entrada, recibidor, perchero, cocina...).</li>
+                        <li><strong>Transforma el número en una imagen vívida:</strong> Asocia el número del artículo a un objeto chocante. Por ejemplo, para el artículo 14 (Igualdad), imagina en el perchero una balanza de la justicia dorada perfectamente nivelada.</li>
+                        <li><strong>Evocación activa espaciada:</strong> Recorre mentalmente tu casa con los ojos cerrados todos los días durante una semana. Al cabo de 7 días, el anclaje pasa a la memoria a largo plazo.</li>
+                    </ol>
+                    <div class="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 text-xs text-amber-900 dark:text-amber-200 mt-4">
+                        💡 <strong>Consejo del preparador:</strong> No intentes memorizar más de 5 artículos al día con esta técnica. La calidad de la imagen mental es más importante que la velocidad.
+                    </div>
+                `
+            },
+            {
+                title: "El Método Feynman: Cómo aprender cualquier concepto explicándolo como a un niño",
+                category: "Técnicas de Estudio",
+                author: "Dra. Elena Marín (Neuroeducadora)",
+                date: "21 de octubre de 2026",
+                readTime: "5 min de lectura",
+                image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "ebau_bio",
+                content: `
+                    <p>Richard Feynman, premio Nobel de Física, era conocido como 'El Gran Explicador'. Afirmaba que si no puedes explicar un concepto a una persona de 10 años sin usar jerga técnica, en realidad tú tampoco lo comprendes a fondo.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">Las 4 fases del Método Feynman:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>1. Elige el tema:</strong> Escribe en la parte superior de una hoja en blanco el concepto que acabas de estudiar (ej. Mitosis vs Meiosis, o Silencio Administrativo).</li>
+                        <li><strong>2. Explícalo con tus propias palabras:</strong> Redacta la explicación como si se la contaras a un principiante. Prohibido copiar frases textuales del manual.</li>
+                        <li><strong>3. Identifica tus lagunas:</strong> En el punto exacto en el que te trabes o sientas la tentación de usar una palabra técnica sin definirla, detén la escritura: has encontrado tu punto ciego.</li>
+                        <li><strong>4. Simplifica con analogías cotidianas:</strong> Vuelve al temario, aclara esa laguna y sustituye cualquier complejidad por una metáfora visual sencilla.</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Las 10 preguntas trampa del examen teórico de la DGT y cómo superarlas",
+                category: "Carnet DGT",
+                author: "Manuel Sanz (Profesor de Formación Vial)",
+                date: "22 de octubre de 2026",
+                readTime: "7 min de lectura",
+                image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "dgt",
+                content: `
+                    <p>El examen teórico de la DGT consta de 30 preguntas y solo permite un máximo de 3 fallos. La mayoría de los suspensos no se deben a falta de estudio, sino a no saber interpretar los enunciados con trampas semánticas frecuentes.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">Puntos críticos donde cae el 70% de alumnos:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Velocidad en travesías:</strong> Muchos confunden carretera convencional con travesía. En travesías, la velocidad máxima genérica es de 50 km/h (o inferior si está señalizada).</li>
+                        <li><strong>Tasa de alcohol en aire espirado:</strong> Recuerda: 0,15 mg/l para noveles (2 años) y profesionales; 0,25 mg/l para conductores generales. Para menores de 18 años (ciclomotores o VMP), la tasa es estrictamente 0,0.</li>
+                        <li><strong>Prioridad en glorietas:</strong> Siempre tiene preferencia el que ya está circulando dentro del anillo. Si vas a salir de la glorieta, debes colocarte obligatoriamente en el carril exterior antes de realizar la maniobra.</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Pomodoro vs Time Blocking: ¿Cuál es el mejor método para opositores?",
+                category: "Productividad",
+                author: "Sofía Gallego (Coach de Opositores)",
+                date: "23 de octubre de 2026",
+                readTime: "6 min de lectura",
+                image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "constitucion",
+                content: `
+                    <p>Gestionar 8 horas diarias de estudio durante meses sin caer en el síndrome de 'burnout' exige un método riguroso de estructuración del tiempo.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">¿Cuándo usar la Técnica Pomodoro (25/5)?</h3>
+                    <p>La técnica Pomodoro es imbatible cuando tienes <em>fricción inicial</em> para ponerte a estudiar o te toca enfrentarte a materias complejas o baterías de tests. Saber que el esfuerzo dura solo 25 minutos desactiva la procrastinación en el córtex prefrontal.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">¿Cuándo usar el Time Blocking?</h3>
+                    <p>El Time Blocking funciona mejor para fases de redacción de temas de desarrollo, simulacros cronometrados de 90 minutos o repaso de esquemas globales, donde una interrupción a los 25 minutos rompería el estado de flujo (flow state).</p>
+                `
+            },
+            {
+                title: "EBAU / Selectividad: Calendario estratégico de repaso a 3 meses del examen",
+                category: "Selectividad / EBAU",
+                author: "Javier Navarro (Coordinador de Orientación)",
+                date: "24 de octubre de 2026",
+                readTime: "8 min de lectura",
+                image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "ebau_bio",
+                content: `
+                    <p>La Selectividad no premia a quien más estudia la última semana, sino a quien mejor planifica las ponderaciones (0,2) de las asignaturas específicas y domina la gestión del tiempo.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">Cronograma de 12 semanas hacia el sobresaliente:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Semanas 1 a 4 (Consolidación):</strong> Cierra resúmenes y tablas de ponderación. Identifica las dos materias que ponderan 0,2 y dedícales el 50% de tus horas vespertinas.</li>
+                        <li><strong>Semanas 5 a 8 (Resolución de Exámenes Oficiales):</strong> Descarga las convocatorias ordinarias y extraordinarias de los últimos 5 años de tu comunidad autónoma y resuélvelas con cronómetro.</li>
+                        <li><strong>Semanas 9 a 12 (Simulacros y Caligrafía):</strong> Realiza un simulacro global completo por semana respetando los horarios oficiales y cuidando la presentación y ortografía (los errores gramaticales restan hasta 2 puntos).</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Guía práctica de la Ley 39/2015: Cómputo de plazos y silencio administrativo",
+                category: "Derecho Administrativo",
+                author: "Laura Gómez (Letrada y Formadora)",
+                date: "25 de octubre de 2026",
+                readTime: "9 min de lectura",
+                image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "ley39",
+                content: `
+                    <p>La Ley 39/2015 del Procedimiento Administrativo Común (LPAC) es obligatoria en prácticamente el 100% de las oposiciones de la Administración General del Estado (AGE), Comunidades Autónomas y Corporaciones Locales.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">Claves esenciales del cómputo de plazos (Art. 30):</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Por horas:</strong> Se cuentan de hora en hora y de minuto en minuto desde la hora y minuto en que tenga lugar la notificación. Son hábiles todas las horas del día que formen parte de un día hábil.</li>
+                        <li><strong>Por días:</strong> Salvo que por ley se indique lo contrario, son días hábiles (se excluyen sábados, domingos y festivos). Los plazos por días comienzan a computar <em>al día siguiente</em> de la notificación.</li>
+                        <li><strong>Por meses o años:</strong> Se computan de fecha a fecha. Si en el mes de vencimiento no hubiera día equivalente (ej. 31 de abril), el plazo expira el último día del mes.</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Nutrición para el cerebro: Alimentos y suplementos avalados por la ciencia",
+                category: "Salud & Rendimiento",
+                author: "Dr. Marcos Vidal (Nutricionista Clínico)",
+                date: "26 de octubre de 2026",
+                readTime: "6 min de lectura",
+                image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "ebau_bio",
+                content: `
+                    <p>El cerebro humano representa únicamente el 2% de nuestro peso corporal, pero consume el 20% de la energía y glucosa diaria. Lo que comes influye de forma directa en tu memoria de trabajo y velocidad de procesamiento neuronal.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">Los 4 pilares nutricionales del opositor:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Ácidos Grasos Omega-3 (DHA):</strong> Mantienen la fluidez de las membranas neuronales y facilitan la sinapsis. Fuentes: nueces, semillas de lino y pescados azules.</li>
+                        <li><strong>Control de la glucemia:</strong> Evita desayunar azúcares refinados antes de un examen o simulacro; provocan un pico de insulina seguido de somnolencia reactiva. Prioriza avena integral con frutos secos y proteína.</li>
+                        <li><strong>Uso estratégico de la cafeína:</strong> Consume café entre 45 y 60 minutos antes del bloque de estudio más exigente, y acompáñalo con abundante agua para evitar deshidratación cerebral.</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Ansiedad ante los exámenes: Técnicas de respiración y control del estrés",
+                category: "Psicología del Opositor",
+                author: "Alicia Serrano (Psicóloga Sanitaria)",
+                date: "26 de octubre de 2026",
+                readTime: "7 min de lectura",
+                image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80",
+                testPreset: "constitucion",
+                content: `
+                    <p>Sentir cierta activación antes de un examen es normal y positivo: nos mantiene alerta. El problema surge cuando esa activación cruza el umbral óptimo (Ley de Yerkes-Dodson) y desata la respuesta de lucha o huida, bloqueando el acceso a la memoria.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-4">El Protocolo de Emergencia 4-7-8:</h3>
+                    <p>Si sientes taquicardia o mareo minutos antes de entrar al aula, aplica este ejercicio de regulación parasimpática:</p>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li>Inhala aire por la nariz en silencio durante <strong>4 segundos</strong>.</li>
+                        <li>Mantén el aire en tus pulmones durante <strong>7 segundos</strong>.</li>
+                        <li>Exhala lentamente por la boca emitiendo un suave sonido de alivio durante <strong>8 segundos</strong>.</li>
+                        <li>Repite el ciclo 4 veces. Esta relación temporal ralentiza el ritmo cardíaco y envía una señal química de seguridad al sistema nervioso central.</li>
+                    </ol>
+                `
+            }
+        ];
+
+        // Lector de Artículos en Modal
+        const articleModal = document.getElementById('article-reader-modal');
+        const closeArticleModalBtn = document.getElementById('close-article-modal-btn');
+        const readerCategoryPill = document.getElementById('reader-category-pill');
+        const readerCoverImage = document.getElementById('reader-cover-image');
+        const readerArticleTitle = document.getElementById('reader-article-title');
+        const readerAuthorName = document.getElementById('reader-author-name');
+        const readerPublishDate = document.getElementById('reader-publish-date');
+        const readerReadingTime = document.getElementById('reader-reading-time');
+        const readerArticleContent = document.getElementById('reader-article-content');
+        const readerTestCtaBtn = document.getElementById('reader-test-cta-btn');
+
+        window.openArticleModal = function(articleIndex) {
+            const art = ARTICLES_DATA[articleIndex];
+            if (!art) return;
+
+            readerCategoryPill.textContent = art.category;
+            readerCoverImage.src = art.image;
+            readerCoverImage.alt = art.title;
+            readerArticleTitle.textContent = art.title;
+            readerAuthorName.textContent = art.author;
+            readerPublishDate.textContent = art.date;
+            readerReadingTime.textContent = art.readTime;
+            readerArticleContent.innerHTML = art.content;
+
+            readerTestCtaBtn.onclick = function() {
+                articleModal.classList.add('hidden');
+                loadTestPreset(art.testPreset);
+            };
+
+            articleModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        };
+
+        function closeArticleModal() {
+            articleModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        closeArticleModalBtn.addEventListener('click', closeArticleModal);
+        articleModal.addEventListener('click', (e) => {
+            if (e.target === articleModal) closeArticleModal();
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !articleModal.classList.contains('hidden')) {
+                closeArticleModal();
+            }
+        });
+
+        // ==============================================================
+        // 6. TEMPORIZADOR POMODORO (MODAL INTERACTIVO)
+        // ==============================================================
+        const pomodoroModal = document.getElementById('pomodoro-modal');
+        const openPomodoroBtn = document.getElementById('open-pomodoro-modal-btn');
+        const mobileOpenPomodoroBtn = document.getElementById('mobile-open-pomodoro-btn');
+        const closePomodoroBtn = document.getElementById('close-pomodoro-modal-btn');
+        const pomoTimerDisplay = document.getElementById('pomo-timer-display');
+        const pomoStartBtn = document.getElementById('pomo-start-btn');
+        const pomoPauseBtn = document.getElementById('pomo-pause-btn');
+        const pomoResetBtn = document.getElementById('pomo-reset-btn');
+        const pomoStatusLabel = document.getElementById('pomo-status-label');
+        const pomoCompletedCount = document.getElementById('pomo-completed-count');
+        const pomoTabBtns = document.querySelectorAll('.pomodoro-tab-btn');
+
+        let pomoDuration = 1500;
+        let pomoRemaining = 1500;
+        let pomoInterval = null;
+        let pomosFinishedToday = 0;
+
+        function updatePomoDisplay() {
+            const mins = String(Math.floor(pomoRemaining / 60)).padStart(2, '0');
+            const secs = String(pomoRemaining % 60).padStart(2, '0');
+            pomoTimerDisplay.textContent = `${mins}:${secs}`;
+        }
+
+        function openPomodoro() {
+            pomodoroModal.classList.remove('hidden');
+        }
+
+        function closePomodoro() {
+            pomodoroModal.classList.add('hidden');
+        }
+
+        openPomodoroBtn.addEventListener('click', openPomodoro);
+        if (mobileOpenPomodoroBtn) mobileOpenPomodoroBtn.addEventListener('click', () => {
+            mobileNav.classList.add('hidden');
+            openPomodoro();
+        });
+        closePomodoroBtn.addEventListener('click', closePomodoro);
+
+        pomoTabBtns.forEach(tab => {
+            tab.addEventListener('click', () => {
+                pomoTabBtns.forEach(t => {
+                    t.classList.remove('active', 'bg-white', 'dark:bg-slate-900', 'text-brand-600', 'dark:text-brand-400', 'shadow-sm');
+                    t.classList.add('text-slate-600', 'dark:text-slate-400');
+                });
+                tab.classList.add('active', 'bg-white', 'dark:bg-slate-900', 'text-brand-600', 'dark:text-brand-400', 'shadow-sm');
+                tab.classList.remove('text-slate-600', 'dark:text-slate-400');
+
+                clearInterval(pomoInterval);
+                pomoInterval = null;
+                pomoStartBtn.classList.remove('hidden');
+                pomoPauseBtn.classList.add('hidden');
+
+                pomoDuration = parseInt(tab.getAttribute('data-duration'), 10);
+                pomoRemaining = pomoDuration;
+
+                if (pomoDuration === 1500) {
+                    pomoStatusLabel.textContent = "Sesión de Enfoque Profundo";
+                } else if (pomoDuration === 300) {
+                    pomoStatusLabel.textContent = "Pausa Corta de Descanso (5m)";
+                } else {
+                    pomoStatusLabel.textContent = "Pausa Larga Reconfortante (15m)";
+                }
+
+                updatePomoDisplay();
+            });
+        });
+
+        pomoStartBtn.addEventListener('click', () => {
+            pomoStartBtn.classList.add('hidden');
+            pomoPauseBtn.classList.remove('hidden');
+
+            pomoInterval = setInterval(() => {
+                if (pomoRemaining > 0) {
+                    pomoRemaining--;
+                    updatePomoDisplay();
+                } else {
+                    clearInterval(pomoInterval);
+                    pomoInterval = null;
+                    pomoStartBtn.classList.remove('hidden');
+                    pomoPauseBtn.classList.add('hidden');
+                    playSuccessSound();
+                    
+                    if (pomoDuration === 1500) {
+                        pomosFinishedToday++;
+                        pomoCompletedCount.textContent = pomosFinishedToday;
+                        alert('¡Excelente trabajo! Has completado un bloque Pomodoro de 25 minutos. Tómate 5 minutos de descanso.');
+                    } else {
+                        alert('¡Fin de la pausa! Vuelve al estudio con energía renovada.');
+                    }
+                    pomoRemaining = pomoDuration;
+                    updatePomoDisplay();
+                }
+            }, 1000);
+        });
+
+        pomoPauseBtn.addEventListener('click', () => {
+            clearInterval(pomoInterval);
+            pomoInterval = null;
+            pomoPauseBtn.classList.add('hidden');
+            pomoStartBtn.classList.remove('hidden');
+        });
+
+        pomoResetBtn.addEventListener('click', () => {
+            clearInterval(pomoInterval);
+            pomoInterval = null;
+            pomoRemaining = pomoDuration;
+            pomoPauseBtn.classList.add('hidden');
+            pomoStartBtn.classList.remove('hidden');
+            updatePomoDisplay();
+        });
+
+        // ==========================================
+        // 7. WIDGET: DESAFÍO DEL DÍA (SIDEBAR)
+        // ==========================================
+        window.checkQuickAnswer = function(buttonElement, isCorrect, explanation) {
+            const parent = buttonElement.parentElement;
+            parent.querySelectorAll('button').forEach(btn => btn.disabled = true);
+
+            const feedback = document.getElementById('quick-challenge-feedback');
+            feedback.classList.remove('hidden');
+
+            if (isCorrect) {
+                buttonElement.classList.add('bg-emerald-100', 'dark:bg-emerald-950', 'border-emerald-500', 'text-emerald-900', 'dark:text-emerald-200');
+                feedback.className = "mt-3 text-xs p-2.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 text-emerald-800 dark:text-emerald-300";
+                feedback.innerHTML = `<strong>¡Correcto!</strong> ${explanation}`;
+                playSuccessSound();
+            } else {
+                buttonElement.classList.add('bg-rose-100', 'dark:bg-rose-950', 'border-rose-500', 'text-rose-900', 'dark:text-rose-200');
+                feedback.className = "mt-3 text-xs p-2.5 rounded-lg bg-rose-50 dark:bg-rose-950/60 border border-rose-200 text-rose-800 dark:text-rose-300";
+                feedback.innerHTML = `<strong>Incorrecto.</strong> ${explanation}`;
+                playErrorSound();
+            }
+        };
+
+        // ==========================================
+        // 8. GESTIÓN DEL CONSENTIMIENTO DE COOKIES
+        // ==========================================
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptAllBtn = document.getElementById('accept-all-cookies-btn');
+        const acceptEssentialBtn = document.getElementById('accept-essential-cookies-btn');
+
+        try {
+            const consent = localStorage.getItem('estudiapro_cookie_consent');
+            if (!consent) {
+                setTimeout(() => cookieBanner.classList.remove('hidden'), 1200);
+            }
+        } catch(e) {}
+
+        if (acceptAllBtn) {
+            acceptAllBtn.addEventListener('click', () => {
+                try {
+                    localStorage.setItem('estudiapro_cookie_consent', 'all');
+                } catch(e) {}
+                cookieBanner.classList.add('hidden');
+            });
+        }
+
+        if (acceptEssentialBtn) {
+            acceptEssentialBtn.addEventListener('click', () => {
+                try {
+                    localStorage.setItem('estudiapro_cookie_consent', 'essential');
+                } catch(e) {}
+                cookieBanner.classList.add('hidden');
+            });
+        }
+
+        window.openCookieSettingsModal = function() {
+            cookieBanner.classList.remove('hidden');
+        };
+
+    });
+    </script>
+</body>
+</html>
